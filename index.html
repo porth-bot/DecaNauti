@@ -292,11 +292,14 @@
             alignItems: 'center',
             justifyContent: 'center'
           }}>
-            <img 
-              src="https://nauticalbowls.com/wp-content/uploads/2024/07/favicon.png"
-              alt="Nautical Bowls"
-              style={{ width: '80px', height: '80px', marginBottom: '24px' }}
-            />
+            <svg width="80" height="80" viewBox="0 0 100 100" style={{ marginBottom: '24px' }}>
+              <circle cx="50" cy="50" r="48" fill="#FFFFFF"/>
+              <path d="M20 55 Q30 35 50 35 Q70 35 80 55" stroke="#1B9AAA" strokeWidth="6" fill="none" strokeLinecap="round"/>
+              <path d="M25 65 Q50 80 75 65" stroke="#1B9AAA" strokeWidth="5" fill="none" strokeLinecap="round"/>
+              <circle cx="35" cy="48" r="4" fill="#E85D4C"/>
+              <circle cx="50" cy="45" r="5" fill="#D4A853"/>
+              <circle cx="65" cy="48" r="4" fill="#147F8A"/>
+            </svg>
             <p style={{ color: BRAND.white, fontSize: '12px', letterSpacing: '3px', fontWeight: '600' }}>
               FUEL A FULL LIFE
             </p>
@@ -820,11 +823,14 @@
             {/* Header */}
             <div style={styles.header}>
               <div style={{ display: 'flex', alignItems: 'center' }}>
-                <img 
-                  src="https://nauticalbowls.com/wp-content/uploads/2024/07/favicon.png"
-                  alt="Nautical Bowls"
-                  style={styles.logo}
-                />
+                <svg width="48" height="48" viewBox="0 0 100 100" style={styles.logo}>
+                  <circle cx="50" cy="50" r="48" fill={BRAND.tealLight}/>
+                  <path d="M20 55 Q30 35 50 35 Q70 35 80 55" stroke={BRAND.teal} strokeWidth="6" fill="none" strokeLinecap="round"/>
+                  <path d="M25 65 Q50 80 75 65" stroke={BRAND.teal} strokeWidth="5" fill="none" strokeLinecap="round"/>
+                  <circle cx="35" cy="48" r="4" fill={BRAND.coral}/>
+                  <circle cx="50" cy="45" r="5" fill={BRAND.gold}/>
+                  <circle cx="65" cy="48" r="4" fill={BRAND.tealDark}/>
+                </svg>
                 <div style={styles.logoText}>
                   <p style={styles.logoTitle}>NAUTICAL BOWLS</p>
                   <p style={styles.logoSubtitle}>SUPERFOOD BOWLS | AÇAÍ & MORE</p>
